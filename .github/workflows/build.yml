@@ -1,0 +1,43 @@
+name: CALLSHARE iOS R0 Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-15-intel
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build OpenCORE AMR-NB
+        run: |
+          bash Scripts/build_amr.sh
+
+      - name: Build unsigned iPhoneOS app
+        run: |
+          xcodebuild \
+            -project CALLSHARE.xcodeproj \
+            -target CALLSHARE \
+            -sdk iphoneos \
+            -configuration Release \
+            CONFIGURATION_BUILD_DIR="$PWD/build/Release-iphoneos" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Package unsigned IPA
+        run: |
+          rm -rf ipa_staging
+          mkdir -p ipa_staging/Payload
+          cp -R build/Release-iphoneos/CALLSHARE.app ipa_staging/Payload/
+          cd ipa_staging
+          zip -qry ../CALLSHARE-iOS-R0-unsigned.ipa Payload
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: CALLSHARE-iOS-R0-unsigned
+          path: CALLSHARE-iOS-R0-unsigned.ipa

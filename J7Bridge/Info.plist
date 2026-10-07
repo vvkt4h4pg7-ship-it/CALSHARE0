@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>CALLSHARE</string>
+    <key>CFBundleExecutable</key>
+    <string>CALLSHARE</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.ugur.callshare</string>
+    <key>CFBundleName</key>
+    <string>CALLSHARE</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>CALLSHARE uses Bluetooth Low Energy to communicate with the IKOS K7 GSM gateway.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>CALLSHARE uses the microphone during an active GSM call.</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>bluetooth-central</string>
+        <string>audio</string>
+    </array>
+    <key>UILaunchScreen</key>
+    <dict/>
+</dict>
+</plist>

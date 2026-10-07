@@ -1,0 +1,187 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00000000000000000000101 /* J7BridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001001; };
+		C00000000000000000000102 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001002; };
+		C00000000000000000000103 /* K7Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001003; };
+		C00000000000000000000104 /* BLETransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001004; };
+		C00000000000000000000105 /* CallKitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001005; };
+		C00000000000000000000106 /* AudioEngineBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001006; };
+		C00000000000000000000107 /* CallSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001007; };
+		C00000000000000000000108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000001008; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C00000000000000000001001 /* J7BridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J7BridgeApp.swift; sourceTree = "<group>"; };
+		C00000000000000000001002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		C00000000000000000001003 /* K7Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K7Protocol.swift; sourceTree = "<group>"; };
+		C00000000000000000001004 /* BLETransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLETransport.swift; sourceTree = "<group>"; };
+		C00000000000000000001005 /* CallKitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitCoordinator.swift; sourceTree = "<group>"; };
+		C00000000000000000001006 /* AudioEngineBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngineBridge.swift; sourceTree = "<group>"; };
+		C00000000000000000001007 /* CallSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSession.swift; sourceTree = "<group>"; };
+		C00000000000000000001008 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C00000000000000000001009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00000000000000000001010 /* CALLSHARE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALLSHARE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00000000000000000002001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00000000000000000003001 /* J7Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000001001,
+				C00000000000000000001002,
+				C00000000000000000001003,
+				C00000000000000000001004,
+				C00000000000000000001005,
+				C00000000000000000001006,
+				C00000000000000000001007,
+				C00000000000000000001008,
+				C00000000000000000001009,
+			);
+			path = J7Bridge;
+			sourceTree = "<group>";
+		};
+		C00000000000000000003002 = {
+			isa = PBXGroup;
+			children = (C00000000000000000003001);
+			sourceTree = "<group>";
+		};
+		C00000000000000000003003 /* Products */ = {
+			isa = PBXGroup;
+			children = (C00000000000000000001010);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C00000000000000000004001 /* CALLSHARE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00000000000000000006001;
+			buildPhases = (
+				C00000000000000000002002,
+				C00000000000000000002001,
+				C00000000000000000002003,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = CALLSHARE;
+			productName = CALLSHARE;
+			productReference = C00000000000000000001010;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C00000000000000000005001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C00000000000000000004001 = { CreatedOnToolsVersion = 16.0; };
+				};
+			};
+			buildConfigurationList = C00000000000000000006002;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, tr);
+			mainGroup = C00000000000000000003002;
+			productRefGroup = C00000000000000000003003;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (C00000000000000000004001);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C00000000000000000002003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C00000000000000000002002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000101,
+				C00000000000000000000102,
+				C00000000000000000000103,
+				C00000000000000000000104,
+				C00000000000000000000105,
+				C00000000000000000000106,
+				C00000000000000000000107,
+				C00000000000000000000108,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000007001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugur.callshare;
+				PRODUCT_NAME = CALLSHARE;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_FILE = J7Bridge/Info.plist;
+				TARGETED_DEVICE_FAMILY = "1";
+				GENERATE_INFOPLIST_FILE = NO;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build/opencore-amrnb";
+				OTHER_LDFLAGS = ("-lopencore-amrnb", "-lc++");
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_BITCODE = NO;
+			};
+			name = Debug;
+		};
+		C00000000000000000007002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugur.callshare;
+				PRODUCT_NAME = CALLSHARE;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_FILE = J7Bridge/Info.plist;
+				TARGETED_DEVICE_FAMILY = "1";
+				GENERATE_INFOPLIST_FILE = NO;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build/opencore-amrnb";
+				OTHER_LDFLAGS = ("-lopencore-amrnb", "-lc++");
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_BITCODE = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00000000000000000006001 /* Target */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (C00000000000000000007001, C00000000000000000007002);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00000000000000000006002 /* Project */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (C00000000000000000007001, C00000000000000000007002);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = C00000000000000000005001;
+}
