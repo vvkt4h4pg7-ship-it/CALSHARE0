@@ -352,6 +352,11 @@ final class AudioEngineBridge: NSObject {
         guard running, let decoder else { return }
 
         var pcm = [Int16](repeating: 0, count: 160)
+                // RAW AMR DEBUG — first 10 frames only
+        if rxFrames < 10 {
+            let hex = packet.map { String(format: "%02X", $0) }.joined(separator: " ")
+            publishStatus("[AMR RAW] #\(rxFrames + 1) len=\(packet.count) HEX=\(hex)")
+        }
         packet.withUnsafeBytes { raw in
             guard let base = raw.bindMemory(to: UInt8.self).baseAddress else { return }
             pcm.withUnsafeMutableBufferPointer { out in
