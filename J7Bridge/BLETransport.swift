@@ -34,6 +34,7 @@ final class BLETransport: NSObject {
     var onDeviceName: ((String) -> Void)?
     var onControl: ((Data) -> Void)?
     var onAudio: ((Data) -> Void)?
+    var onTransportLost: (() -> Void)?
 
     func start() {
         bleQueue.async { [weak self] in
